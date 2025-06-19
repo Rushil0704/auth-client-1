@@ -36,6 +36,7 @@ const CreateCategory = () => {
   const onSubmit = (data: CategoryFormValues) => {
     console.log("Category Data:", data);
     // Add API call to create category here
+    navigate("/categories");
   };
 
   return (
