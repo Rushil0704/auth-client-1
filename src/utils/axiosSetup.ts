@@ -1,5 +1,4 @@
 import axios from "axios";
-
 // Create an instance of Axios
 const api = axios.create({
   baseURL: "http://localhost:8000", // backend URL
@@ -17,7 +16,7 @@ api.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 export default api;
